@@ -1,4 +1,6 @@
 import _ from "lodash";
+import fs from "fs/promises";
+import path from "path";
 import errs from "../lib/error.js";
 import { castJsonIfNeed } from "../lib/helpers.js";
 import utils from "../lib/utils.js";
@@ -451,8 +453,48 @@ const internalProxyHost = {
 		return rows;
 	},
 
-	/**
-	 * Report use
+	/**	 * Get proxy host logs
+	 * @param   {Access}  access
+	 * @param   {Object}  data
+	 * @returns {Promise}
+	 */
+	getLogs: (access, data) => {
+		// First check if user has permission to read proxy host
+		return internalProxyHost
+			.get(access, { id: data.id })
+			.then((proxyHost) => {
+				if (!proxyHost) {
+					throw new errs.NotFoundError("Proxy host not found");
+				}
+
+				// Construct the log file path based on the log type
+				const logType = data.logType === "error" ? "error" : "access";
+				const logFileName = `proxy-host-${data.id}_${logType}.log`;
+				const logFilePath = path.join("/data/logs", logFileName);
+
+				// Read the log file
+				return fs
+					.readFile(logFilePath, "utf-8")
+					.catch(() => {
+						// If file doesn't exist, return empty string
+						return "";
+					})
+					.then((logs) => {
+						// Tail the last 100 lines
+						const lines = logs.split("\n");
+						const tailedLines = lines.slice(-100);
+						const tailedLogs = tailedLines.join("\n");
+
+						return {
+							id: data.id,
+							logType: logType,
+							logs: tailedLogs,
+						};
+					});
+			});
+	},
+
+	/**	 * Report use
 	 *
 	 * @param   {Number}  user_id
 	 * @param   {String}  visibility

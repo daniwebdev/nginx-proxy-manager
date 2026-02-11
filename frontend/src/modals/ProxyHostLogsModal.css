@@ -1,0 +1,89 @@
+/* Log Viewer Container - stable styles to prevent blinking */
+.npm-logs-viewer {
+	height: 400px;
+	overflow-y: auto;
+	background-color: #1e1e1e;
+	padding: 12px;
+	position: relative;
+}
+
+/* Log Content Text */
+.npm-logs-content {
+	margin: 0;
+	font-size: 12px;
+	font-family: 'Courier New', monospace;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	color: #e0e0e0;
+	line-height: 1.4;
+}
+
+/* Empty State Message */
+.npm-logs-empty {
+	color: #888;
+}
+
+/* Loading Container */
+.npm-logs-loading {
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 400px;
+}
+
+/* Auto-refresh Status Bar */
+.npm-logs-status {
+	padding: 8px 12px;
+	background-color: #f5f7fb;
+	border-top: 1px solid #e3e6f0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.npm-logs-status small {
+	color: #666;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+/* Interval Selector Dropdown */
+.npm-logs-interval-select {
+	padding: 2px 4px;
+	font-size: 11px;
+	border-radius: 3px;
+	border: 1px solid #ccc;
+	background-color: white;
+	cursor: pointer;
+	min-width: 50px;
+}
+
+.npm-logs-interval-select:hover {
+	border-color: #bbb;
+}
+
+.npm-logs-interval-select:focus {
+	outline: none;
+	border-color: #0d6efd;
+	box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Copied Notification */
+.npm-logs-copied {
+	margin-top: 8px !important;
+	margin-bottom: 0 !important;
+	animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

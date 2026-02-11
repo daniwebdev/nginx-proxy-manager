@@ -9,6 +9,7 @@ export * from "./HelpModal";
 export * from "./HTTPCertificateModal";
 export * from "./PermissionsModal";
 export * from "./ProxyHostModal";
+export * from "./ProxyHostLogsModal";
 export * from "./RedirectionHostModal";
 export * from "./RenewCertificateModal";
 export * from "./SetPasswordModal";

@@ -41,11 +41,17 @@
 	"action.close": {
 		"defaultMessage": "Fermer"
 	},
+	"action.copy": {
+		"defaultMessage": "Copy"
+	},
 	"action.delete": {
 		"defaultMessage": "Supprimer"
 	},
 	"action.disable": {
 		"defaultMessage": "Désactiver"
+	},
+	"action.disable-auto-refresh": {
+		"defaultMessage": "Disable auto-refresh"
 	},
 	"action.download": {
 		"defaultMessage": "Télécharger"
@@ -56,14 +62,23 @@
 	"action.enable": {
 		"defaultMessage": "Activer"
 	},
+	"action.enable-auto-refresh": {
+		"defaultMessage": "Enable auto-refresh"
+	},
 	"action.permissions": {
 		"defaultMessage": "Permissions"
+	},
+	"action.refresh": {
+		"defaultMessage": "Refresh"
 	},
 	"action.renew": {
 		"defaultMessage": "Renouveler"
 	},
 	"action.view-details": {
 		"defaultMessage": "Voir les Détails"
+	},
+	"action.view-logs": {
+		"defaultMessage": "View Logs"
 	},
 	"auditlogs": {
 		"defaultMessage": "Journaux d'audit"
@@ -493,6 +508,12 @@
 	},
 	"proxy-host.forward-host": {
 		"defaultMessage": "Nom d'hôte de redirection / IP"
+	},
+	"proxy-host.logs": {
+		"defaultMessage": "Proxy Host Logs"
+	},
+	"proxy-host.logs.auto-updating": {
+		"defaultMessage": "Auto-updating every {interval} second{plural, select, true {s} other {}}"
 	},
 	"proxy-hosts": {
 		"defaultMessage": "Hôtes proxy"

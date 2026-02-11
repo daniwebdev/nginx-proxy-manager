@@ -47,6 +47,9 @@
 	"action.close": {
 		"defaultMessage": "Kapat"
 	},
+	"action.copy": {
+		"defaultMessage": "Copy"
+	},
 	"action.delete": {
 		"defaultMessage": "Sil"
 	},
@@ -55,6 +58,9 @@
 	},
 	"action.disable": {
 		"defaultMessage": "Devre Dışı Bırak"
+	},
+	"action.disable-auto-refresh": {
+		"defaultMessage": "Disable auto-refresh"
 	},
 	"action.download": {
 		"defaultMessage": "İndir"
@@ -65,14 +71,23 @@
 	"action.enable": {
 		"defaultMessage": "Etkinleştir"
 	},
+	"action.enable-auto-refresh": {
+		"defaultMessage": "Enable auto-refresh"
+	},
 	"action.permissions": {
 		"defaultMessage": "İzinler"
+	},
+	"action.refresh": {
+		"defaultMessage": "Refresh"
 	},
 	"action.renew": {
 		"defaultMessage": "Yenile"
 	},
 	"action.view-details": {
 		"defaultMessage": "Detayları Görüntüle"
+	},
+	"action.view-logs": {
+		"defaultMessage": "View Logs"
 	},
 	"auditlogs": {
 		"defaultMessage": "Denetim Kayıtları"
@@ -508,6 +523,12 @@
 	},
 	"proxy-host.forward-host": {
 		"defaultMessage": "İletme Host Adı / IP"
+	},
+	"proxy-host.logs": {
+		"defaultMessage": "Proxy Host Logs"
+	},
+	"proxy-host.logs.auto-updating": {
+		"defaultMessage": "Auto-updating every {interval} second{plural, select, true {s} other {}}"
 	},
 	"proxy-hosts": {
 		"defaultMessage": "Proxy Host'lar"

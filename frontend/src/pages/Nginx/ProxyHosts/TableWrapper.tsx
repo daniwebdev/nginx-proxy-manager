@@ -6,7 +6,7 @@ import { deleteProxyHost, toggleProxyHost } from "src/api/backend";
 import { Button, HasPermission, LoadingPage } from "src/components";
 import { useProxyHosts } from "src/hooks";
 import { T } from "src/locale";
-import { showDeleteConfirmModal, showHelpModal, showProxyHostModal } from "src/modals";
+import { showDeleteConfirmModal, showHelpModal, showProxyHostLogsModal, showProxyHostModal } from "src/modals";
 import { MANAGE, PROXY_HOSTS } from "src/modules/Permissions";
 import { showObjectSuccess } from "src/notifications";
 import Table from "./Table";
@@ -99,6 +99,7 @@ export default function TableWrapper() {
 					isFiltered={!!search}
 					isFetching={isFetching}
 					onEdit={(id: number) => showProxyHostModal(id)}
+					onViewLogs={(id: number) => showProxyHostLogsModal(id)}
 					onDelete={(id: number) =>
 						showDeleteConfirmModal({
 							title: <T id="object.delete" tData={{ object: "proxy-host" }} />,

@@ -104,6 +104,9 @@
 	"action.close": {
 		"defaultMessage": "Close"
 	},
+	"action.copy": {
+		"defaultMessage": "Copy"
+	},
 	"action.delete": {
 		"defaultMessage": "Delete"
 	},
@@ -112,6 +115,9 @@
 	},
 	"action.disable": {
 		"defaultMessage": "Disable"
+	},
+	"action.disable-auto-refresh": {
+		"defaultMessage": "Disable auto-refresh"
 	},
 	"action.download": {
 		"defaultMessage": "Download"
@@ -122,14 +128,23 @@
 	"action.enable": {
 		"defaultMessage": "Enable"
 	},
+	"action.enable-auto-refresh": {
+		"defaultMessage": "Enable auto-refresh"
+	},
 	"action.permissions": {
 		"defaultMessage": "Permissions"
+	},
+	"action.refresh": {
+		"defaultMessage": "Refresh"
 	},
 	"action.renew": {
 		"defaultMessage": "Renew"
 	},
 	"action.view-details": {
 		"defaultMessage": "View Details"
+	},
+	"action.view-logs": {
+		"defaultMessage": "View Logs"
 	},
 	"auditlogs": {
 		"defaultMessage": "Audit Logs"
@@ -592,6 +607,12 @@
 	},
 	"proxy-host.forward-host": {
 		"defaultMessage": "Forward Hostname / IP"
+	},
+	"proxy-host.logs": {
+		"defaultMessage": "Proxy Host Logs"
+	},
+	"proxy-host.logs.auto-updating": {
+		"defaultMessage": "Auto-updating every {interval} second{plural, select, true {s} other {}}"
 	},
 	"proxy-hosts": {
 		"defaultMessage": "Proxy Hosts"

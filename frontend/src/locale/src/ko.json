@@ -47,6 +47,9 @@
 	"action.close": {
 		"defaultMessage": "닫기"
 	},
+	"action.copy": {
+		"defaultMessage": "Copy"
+	},
 	"action.delete": {
 		"defaultMessage": "삭제"
 	},
@@ -55,6 +58,9 @@
 	},
 	"action.disable": {
 		"defaultMessage": "비활성화"
+	},
+	"action.disable-auto-refresh": {
+		"defaultMessage": "Disable auto-refresh"
 	},
 	"action.download": {
 		"defaultMessage": "다운로드"
@@ -65,14 +71,23 @@
 	"action.enable": {
 		"defaultMessage": "활성화"
 	},
+	"action.enable-auto-refresh": {
+		"defaultMessage": "Enable auto-refresh"
+	},
 	"action.permissions": {
 		"defaultMessage": "권한"
+	},
+	"action.refresh": {
+		"defaultMessage": "Refresh"
 	},
 	"action.renew": {
 		"defaultMessage": "갱신"
 	},
 	"action.view-details": {
 		"defaultMessage": "자세히 보기"
+	},
+	"action.view-logs": {
+		"defaultMessage": "View Logs"
 	},
 	"auditlogs": {
 		"defaultMessage": "감사 로그"
@@ -520,6 +535,12 @@
 	},
 	"proxy-host.forward-host": {
 		"defaultMessage": "전달할 호스트명 / IP"
+	},
+	"proxy-host.logs": {
+		"defaultMessage": "Proxy Host Logs"
+	},
+	"proxy-host.logs.auto-updating": {
+		"defaultMessage": "Auto-updating every {interval} second{plural, select, true {s} other {}}"
 	},
 	"proxy-hosts": {
 		"defaultMessage": "프록시 호스트"
